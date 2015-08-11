@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "Pi 2 tau",
+    "description": "Change 2pi to tau",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
